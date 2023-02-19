@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Анимка(</title>
+	<style>
+
+		@keyframes animka {
+			from {
+		right: 25px;
+		top: 25px;
+			}
+
+		    25% {
+		    	right: 	700px;
+		    	top: 250px;
+		    	border-radius: 70px 150px;
+		    	border: solid blue 5px;
+		    	font-size: 0px;
+		    
+		    }
+
+			50% {
+				 right: 1015px;
+		         top: 155px;
+		         border-radius: 120px;
+		        
+		         border: solid lightblue 5px;
+
+		
+			}
+
+			75% {
+				 right: 500px;
+		         top: 75px;
+		         height: 250px;
+		         border: solid cyan; 7px;
+			}
+
+			80% {
+				right: 500px;
+		         top: 75px;
+		         border-radius: 100px 50px;
+
+			}
+
+			to {
+				 right: 25px;
+		         top: 25px;
+			}
+
+		}
+
+		div{
+			
+		}
+		.p {
+		border: solid green 1px;
+		height: 150px;
+		width: 150px;
+	    right: 25px;
+		top: 25px;
+		position: fixed;
+		padding: 20px 20px 20px 20px;
+		background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+        color: white;
+        animation: animka 5s infinite alternate ease-in;
+        position: z-index: 2;
+		}
+
+		.button {
+			position: relative;
+			position: z-index: 2;
+			background-color: blue;
+			top: 35px;
+			left: 100px;
+			color: white;
+		}
+
+		body {
+		height: 1000px;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<div class="p"><p>Нажмите на эту кнопку. Если не нажмете - блабалабалабала</p>
+	<span class="button">Кнопка</span></div>
+</div>
+
+</body>
+</html>
